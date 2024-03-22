@@ -5,7 +5,7 @@
     capsules.url = "github:input-output-hk/devshell-capsules";
     devenv.url = "github:cachix/devenv";
     disko.url = "github:nix-community/disko";
-    nixpkgs.url = "github:input-output-hk/nixpkgs/node-16-GHA-revert";
+    nixpkgs.url = "/home/shlevy/src/nixpkgs/node-16-GHA-revert";
   };
   outputs = inputs@{ self, flake-parts, devenv, capsules, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -34,6 +34,7 @@
               users.users.root.openssh.authorizedKeys.keys =
                 [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID/fJqgjwPG7b5SRPtCovFmtjmAksUSNg3xHWyqBM4Cs shlevy@shlevy-laptop"
                   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbXkgUEf6TLnEWXwc5wjxhr45wKHJFEVIWIkz9E9ZrnZ4BfH6rI4+tiWn6QihpXnS7zwPqWgCaeLkWzHXwqFmHPzFv1PNVYT1BcuddRFceWcTNXxwJ2JTDXtadH5F/ZyDI2SRsbPfGa1iLca/ANUOQVb4yI3PSALD4BPd5G19mf/8HTZGL0wnYbq9JG7FHKG/8UheuoLf4En6Dk65JLTKvhdnASV5uMJOqmNaI3Q5v6YjVNokPLOqal/PN9/ERJ+jQIB65fFdSV4U55/jHFne1CdtEae77Qymi9JoLg1L4gbS9Dgmu09Asv4FB+jH4HQRUIkCKQig6Blp/HVrAPWVud2IgULgEqw/l07BBVThWbdmxd32YtAkhveNX6FHQO3Fhjk1J2wAXpOgZFVBiRbaCP9PyZe5yKK7crajnIAIzzOUv+SrHLvUN06wrAqUxCNJ8tnb/VZI0m2DXblKXfMxAQ/yoyjD8OlvlWz89MyPCiq4Ep9RbFWQw2YyW17JQp+U= renebarbosa@Renes-MacBook-Air.local"
+                  "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCHdILXJXPGYkjB8QbX246cRT9jLNZq0P8a9+r14Xm6pjX9r0Uj0o+b0zysZR+GcupwDZ9/GkGiKm5LfB9xgP48= shlevy@avp.shealevy.com"
                 ];
               networking.nameservers = [ "185.12.64.1" "185.12.64.2" "2a01:4ff:ff00::add:1" "2a01:4ff:ff00::add:2" ];
               powerManagement = {

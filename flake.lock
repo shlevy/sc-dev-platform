@@ -1032,18 +1032,17 @@
     },
     "nixpkgs_18": {
       "locked": {
-        "lastModified": 1707845076,
-        "narHash": "sha256-gxRfTdgRqX7gcrXlD1soKaCtne+rKm5ByyCcNt6tm/k=",
-        "owner": "input-output-hk",
-        "repo": "nixpkgs",
-        "rev": "48e2c132795327bc8f1a1cfb29fe85e688fd5cb5",
-        "type": "github"
+        "lastModified": 1709147067,
+        "narHash": "sha256-JaVDL7W5zRFpO9mRUE8kOtOP/wpT5Mjdtt5unAWStC8=",
+        "ref": "refs/heads/node-16-GHA-revert",
+        "rev": "f6e59824017255bd6177c61c0db7225f1768d17f",
+        "revCount": 556210,
+        "type": "git",
+        "url": "file:///home/shlevy/src/nixpkgs/node-16-GHA-revert"
       },
       "original": {
-        "owner": "input-output-hk",
-        "ref": "node-16-GHA-revert",
-        "repo": "nixpkgs",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/shlevy/src/nixpkgs/node-16-GHA-revert"
       }
     },
     "nixpkgs_2": {
